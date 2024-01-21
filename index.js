@@ -15,4 +15,11 @@ app.get('*', function(req,res){
     res.render('error404')
 })
 
+// GET /places
+app.get('/', (req, res) => {
+    let places = []
+    res.render('places/index')
+  })
+  
+
 app.listen(process.env.PORT)
