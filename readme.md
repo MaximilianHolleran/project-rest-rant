@@ -68,3 +68,9 @@ Possible bonus ideas:
 * Update for comments
 * Aggregate rating for a place
 * Auto-complete state dropdown
+
+Photo by <a href="https://unsplash.com/@jomemui?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Jerome Jome</a> on <a href="https://unsplash.com/photos/pasta-with-vegetables-near-meat-with-cabbage-and-stewed-food-in-bowl-Ga3ziG9jCno?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
+  
+
+Photo by <a href="https://unsplash.com/@rebaspike?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Reba Spike</a> on <a href="https://unsplash.com/photos/black-cat-on-brown-wooden-table-OjB_lkGKhX8?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
+  

@@ -6,13 +6,19 @@ router.get ('/', function(req, res) {
         city: 'Seattle',
         state: 'WA',
         cuisines: 'Thai, Pan-Asian',
-        pic: 'http://placekitten.com/250/250'
+        pic: '/images/jerome-jome-unsplash.jpg',
+        credit: "https://unsplash.com/@jomemui?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash",
+        creditName: 'Jerome Jome'
+  
+        
       }, {
         name: 'Coding Cat Cafe',
         city: 'Phoenix',
         state: 'AZ',
         cuisines: 'Coffee, Bakery',
-        pic: 'http://placekitten.com/250/250'
+        pic: '/images/reba-spike-unsplash.jpg',
+        credit: "https://unsplash.com/@rebaspike?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash",
+        creditName: 'Reba Spike'
       }]
 
       res.render('places/index', {places})

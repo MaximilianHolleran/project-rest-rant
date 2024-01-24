@@ -1,5 +1,55 @@
 h1 {
     text-align: center;
     color: cornflowerblue;
+    padding-bottom: 100px;
   }
+
+/* .home-image {
+    display: flex;
+    justify-content: center;
+    max-width: 50%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.home-image img {
+    max-width: 25%;
+    height: auto;
+}
+
+.home-image-credit {
+    padding-top: 20px;
+    text-align: center;
+    justify-content: center;
+}
+
+a {
+    display: flex;          
+    justify-content: center; 
+    align-items: center;     
+    padding: 15px;      
+    text-decoration: none;   
+  }
+
+  .btn-primary {
+    padding: 10px;           
+    background-color: blue; 
+    color: white;           
+    cursor: pointer;         
+  }
+  
+  .fourofour-image {
+    display: flex;
+    justify-content: center;
+    max-width: 50%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.fourofour-image img {
+    max-width: 60%;
+    height: auto;
+}
+ */
+
   
