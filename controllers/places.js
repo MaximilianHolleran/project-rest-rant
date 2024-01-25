@@ -1,41 +1,31 @@
 const router = require('express').Router()
+const places = require('../models/placelist.js')
 
 router.get('/:id', (req, res) => {
   res.render('places/new')
   const placeId = req.params.id})
 
-  router.get('/new', (req, res) => {
-    res.render('places/new')
-  })
+router.get('/new', (req, res) => {
+  res.render('places/new')
+})
 
-
-router.get ('/', function(req, res) {
-    let places = [{
-        name: 'H-Thai-ML',
-        city: 'Seattle',
-        state: 'WA',
-        cuisines: 'Thai, Pan-Asian',
-        pic: '/images/jerome-jome-unsplash.jpg',
-        credit: "https://unsplash.com/@jomemui?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash",
-        creditName: 'Jerome Jome'
-  
-        
-      }, {
-        name: 'Coding Cat Cafe',
-        city: 'Phoenix',
-        state: 'AZ',
-        cuisines: 'Coffee, Bakery',
-        pic: '/images/reba-spike-unsplash.jpg',
-        credit: "https://unsplash.com/@rebaspike?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash",
-        creditName: 'Reba Spike'
-      }]
-
-      res.render('places/index', {places})
-      
+router.get ('/', function(req, res) { 
+      res.render('places/index', {places})     
 })
 
 router.post('/', (req, res) => {
-  res.send('Post /places')
-})
-
+    if (!req.body.pic) {
+      // Default image if one is not provided
+      req.body.pic = 'http://placekitten.com/400/400'
+    }
+    if (!req.body.city) {
+      req.body.city = 'Anytown'
+    }
+    if (!req.body.state) {
+      req.body.state = 'USA'
+    }
+    places.push(req.body)
+    res.redirect('/places')
+  })
+  
 module.exports = router
