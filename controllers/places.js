@@ -1,12 +1,12 @@
 const router = require('express').Router()
 
-router.get('/new', (req, res) => {
-  res.render('places/new')
-})
-
 router.get('/:id', (req, res) => {
   res.render('places/new')
   const placeId = req.params.id})
+
+  router.get('/new', (req, res) => {
+    res.render('places/new')
+  })
 
 
 router.get ('/', function(req, res) {
@@ -32,6 +32,10 @@ router.get ('/', function(req, res) {
 
       res.render('places/index', {places})
       
+})
+
+router.post('/', (req, res) => {
+  res.send('Post /places')
 })
 
 module.exports = router
