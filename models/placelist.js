@@ -6,7 +6,6 @@ module.exports =  [{
     pic: '/images/jerome-jome-unsplash.jpg',
     credit: "https://unsplash.com/@jomemui?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash",
     creditName: 'Jerome Jome'
-
     
   }, {
     name: 'Coding Cat Cafe',
@@ -16,4 +15,5 @@ module.exports =  [{
     pic: '/images/reba-spike-unsplash.jpg',
     credit: "https://unsplash.com/@rebaspike?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash",
     creditName: 'Reba Spike'
+   
   }]
