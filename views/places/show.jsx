@@ -45,7 +45,7 @@ function show (data) {
                 <h1>{ data.place.name }</h1>
                 <img src={ data.place.pic} alt={data.place.credit}/>
                 <h4>Located in {data.place.city}, {data.place.state}</h4>
-                <h3>{data.place.showEstablished}</h3>
+                <h3>{data.place.showEstablished()}</h3>
                 <h3> Serving{ data.place.cuisines }</h3> 
                 <div>
                 <h2>{rating}</h2>
